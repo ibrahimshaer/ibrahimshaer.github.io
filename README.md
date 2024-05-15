@@ -24,13 +24,16 @@
 Developed a novel hyper-parameter optimization strategy for **Convolutional Neural Networks** (CNN) using **transformer** architecture and **actor-critic reinforcement learning (RL)** approach, named _TRL-HPO_, implemented using **PyTorch**. This architecture harnesses the parallelization of multi-headed attention to facilitate the training process and the progressive generation of layers method. _TRL-HPO_ produced CNN models that outperformed state-of-the-art by 6.8% in terms of classification accuracy produced in the same time frame. The _TRL-HPO_ adds clarity to the model generation procedure by identifying the stacking of fully connected layers as the main reason for degradation in model performance. 
 
 
-<!--- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
+![Architecture](/assets/img/architecture_v3.png)
 
 ### CorrFL: Correlation-based Neural Network Architecture for Unavailability Concerns in a Heterogeneous IoT Environment 
 [Publication](https://arxiv.org/abs/2307.12149)
 [GitHub](https://github.com/Western-OC2-Lab/CorrFL)
 
-This paper addresses the limitations of the Federated Learning (FL) environment related to the heterogeneity of participants' models and the unvailability constrained, coined as ``Oblique Federated Learning". We address this problem using Correlational Federated Learning (CorrFL), inspired by the multi-view representational learning field. For each available model weight, an **Autoencoder** is implemented to project the heterogeneous weights into a common representation, while maximizing the correlation between model latent representations when a model is absent. The validity of CorrFL is evaluated on CO2 prediction use case, whereby a model becomes unavailable upon drastic changes in underlying conditions. Under this scenario, the models using the model weights compensated by CorrFL outperform models with out-dated weights by a minimum of 15% in terms of predictive quality. 
+This paper addresses the limitations of the Federated Learning (FL) environment related to the heterogeneity of participants' models and the unvailability constrained, coined as ``Oblique Federated Learning". We address this problem using Correlational Federated Learning (CorrFL), inspired by the multi-view representational learning field. For each available model weight, an **Autoencoder** is implemented to project the heterogeneous weights into a common representation, while maximizing the correlation between model latent representations when a model is absent. The validity of CorrFL is evaluated on the CO2 prediction use case, whereby a model becomes unavailable upon drastic changes in underlying conditions. Under this scenario, the models using the model weights compensated by CorrFL outperform models with outdated weights by a minimum of 15% in terms of predictive quality. 
+
+![Architecture](/assets/img/methodology_v3.png)
+
 
 ### Hierarchical Modelling for CO2 Variation Prediction for HVAC System Operation 
 [Publication](https://www.mdpi.com/1999-4893/16/5/256)
@@ -38,6 +41,7 @@ This paper addresses the limitations of the Federated Learning (FL) environment 
 
 This paper devises a hierarchical model to accurately predict CO2 variations, acting as occupancy proxy estimators and facilitate the models' transferability to different office spaces. These predictions aid the HVAC systems in their decision-making process, reducing their carbon footprint. In the first step of this method, the collected environmental features of CO2, pressure, humidity, temperature, and Passive InfraRed (PIR) count are transformed into images using Gramian Angular Field (GAF). The second phase combines the predictions of the first phase with the differences of the environmental features. The combination of 2D-CNN of the first phase and decision trees produced the best result of Mean Absolute Error (MAE) = 27.74 for a 20-minute prediction window compared to the state-of-the-art models. In a similar manner, the fine-tuned model applied to different spatial settings outperformed the state-of-the-art models with MAE = 33.6 for a 20-minute prediction window. These great results showcase the utility of the developed framework in CO2 variation prediction in different spatial settings.  
 
+![Architecture](/assets/img/occupancy_methodology_r1.png)
 <!--- ![Bike Study](/assets/img/bike_study.jpeg) -->
 
 
