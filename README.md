@@ -1,6 +1,6 @@
 # Data Scientist
 
-#### Technical Skills: Python, SQL, GoLang, PyTorch, Tensorflow. 
+#### Technical Skills: Python, SQL, GoLang, PyTorch, TensorFlow. 
 ### Machine Learning Skills: Deep Learning, Reinforcement Learning, Time-series Analysis, Computer Vision, Tree-based Algorithms, Federated Learning, and Quantization
 
 ## Education
@@ -10,10 +10,10 @@
 
 ## Research Experience
 **Research Assistant @ University of Western Ontario (_Sept 2018 - Present_)**
-- Improved the performance of the hyper-parameter optimization of neural networks by 6.8% using transformer-based Reinforcement Learning approach producing models that outperformed state-of-the-art processes on public datasets while gaining a 30% speedup in model generation. 
+- Improved the performance of the hyper-parameter optimization of neural networks by 6.8% using a transformer-based Reinforcement Learning approach producing models that outperformed state-of-the-art processes on public datasets while gaining a 30% speedup in model generation. 
 - Addressed availability and heterogeneity concerns in Federated Learning settings by leveraging Correlational Neural Networks to successfully fill the training gap of absent models, with 15% improvement in predictive quality.  
-- Investigated the predictive quality of different Machine Learning models and time-series feature engineering methods for occupancy proxy prediction for aiding the Heating, Ventilation, and Air Conditioning (HVAC) systems using energy consumption while identifying air leaks as the reason for unexplained variances of wrong predicitions.
-- Implemented a hierarchical framework to accurately predict CO2 variations as occupancy proxy estimators that outperforms state-of-the-art methods by 32% and facilitate the transferablility of this method to other spatial settings.
+- Investigated the predictive quality of different Machine Learning models and time-series feature engineering methods for occupancy proxy prediction for aiding the Heating, Ventilation, and Air Conditioning (HVAC) systems using energy consumption while identifying air leaks as the reason for unexplained variances of wrong predictions.
+- Implemented a hierarchical framework to accurately predict CO2 variations as occupancy proxy estimators that outperform state-of-the-art methods by 32% and facilitate the transferability of this method to other spatial settings.
 - Integrated explainability into deep learning models under concept drift conditions by identifying 86% of drifting features via Autoencoders in an occupancy proxy prediction use case.
 
 ## Projects
@@ -21,7 +21,7 @@
 [Publication](https://arxiv.org/abs/2403.12237)
 [GitHub](https://github.com/ibrahimshaer/TRL-HPO)
 
-Developed a novel hyper-parameter optimization strategy for **Convolutional Neural Networks** (CNN) using **transformer** architecture and **actor-critic reinforcement learning (RL)** approach, named _TRL-HPO_, implemented using **PyTorch**. This architecture harnesses the parallelization of multi-headed attention to facilitate the training process and the progressive generation of layers method. _TRL-HPO_ produced CNN models that outperformed state-of-the-art by 6.8% in terms of classification accuracy produced in the same time-frame. The _TRL-HPO_ adds clarity to the model generation procedure by identifying the stacking of fully-connected layers as the main reason for degradation in model performance. 
+Developed a novel hyper-parameter optimization strategy for **Convolutional Neural Networks** (CNN) using **transformer** architecture and **actor-critic reinforcement learning (RL)** approach, named _TRL-HPO_, implemented using **PyTorch**. This architecture harnesses the parallelization of multi-headed attention to facilitate the training process and the progressive generation of layers method. _TRL-HPO_ produced CNN models that outperformed state-of-the-art by 6.8% in terms of classification accuracy produced in the same time frame. The _TRL-HPO_ adds clarity to the model generation procedure by identifying the stacking of fully connected layers as the main reason for degradation in model performance. 
 
 
 <!--- ![EEG Band Discovery](/assets/img/eeg_band_discovery.jpeg) -->
@@ -30,13 +30,13 @@ Developed a novel hyper-parameter optimization strategy for **Convolutional Neur
 [Publication](https://arxiv.org/abs/2307.12149)
 [GitHub](https://github.com/Western-OC2-Lab/CorrFL)
 
-This paper addresses limitations of Federated Learning (FL) environment related to heterogeneity of participants' models and the unvailability constrained, coined as ``Oblique Federated Learning". We address this problem using Correlational Federated Learning (CorrFL), inspired by multi-view representational learning field. For each available model weight, an **Autoencoder** is implemented to project the heterogeneous weights into a common representation, while maximizing the correlation between model latent representations when a model is absent. The validity of CorrFL is evaluated on CO2 prediction use case, whereby a model becomes unavailable upon drastic changes in underlying conditions. Under this scenario, the models using the model weights compensated by CorrFL outperform models with out-dated weights by a minimum of 15% in terms of predictive quality. 
+This paper addresses the limitations of the Federated Learning (FL) environment related to the heterogeneity of participants' models and the unvailability constrained, coined as ``Oblique Federated Learning". We address this problem using Correlational Federated Learning (CorrFL), inspired by the multi-view representational learning field. For each available model weight, an **Autoencoder** is implemented to project the heterogeneous weights into a common representation, while maximizing the correlation between model latent representations when a model is absent. The validity of CorrFL is evaluated on CO2 prediction use case, whereby a model becomes unavailable upon drastic changes in underlying conditions. Under this scenario, the models using the model weights compensated by CorrFL outperform models with out-dated weights by a minimum of 15% in terms of predictive quality. 
 
 ### Hierarchical Modelling for CO2 Variation Prediction for HVAC System Operation 
 [Publication](https://www.mdpi.com/1999-4893/16/5/256)
 [GitHub](https://github.com/Western-OC2-Lab/hierarchical-CO2)
 
-This paper devises a hierarchical model to accurately predict CO2 variations, acting as occupancy proxy estimators, and facilitate the models' transferability to different office spaces. These predictions aid the HVAC systems in their decision-making process, reducing their carbon footprint. In the first step of this method, the collected environmental features of CO2, pressure, humidity, temperature, and Passive InfraRed (PIR) count are transformed into images using Gramian Angular Field (GAF). The second phase combines the predictions of the first phase with the differences of the environmental features. The combination of 2D-CNN of the first phase and decision trees produced the best result of Mean Absolute Error (MAE) = 27.74 for a 20-minute prediction window compared to the state-of-the-art models. In a similar manner, the fine-tuned model applied to different spatial settings outperformed the state-of-the-art models with MAE = 33.6 for a 20-minute prediction window. These great results showcase the utility of the developed framework in CO2 variation prediction in different spatial settings.  
+This paper devises a hierarchical model to accurately predict CO2 variations, acting as occupancy proxy estimators and facilitate the models' transferability to different office spaces. These predictions aid the HVAC systems in their decision-making process, reducing their carbon footprint. In the first step of this method, the collected environmental features of CO2, pressure, humidity, temperature, and Passive InfraRed (PIR) count are transformed into images using Gramian Angular Field (GAF). The second phase combines the predictions of the first phase with the differences of the environmental features. The combination of 2D-CNN of the first phase and decision trees produced the best result of Mean Absolute Error (MAE) = 27.74 for a 20-minute prediction window compared to the state-of-the-art models. In a similar manner, the fine-tuned model applied to different spatial settings outperformed the state-of-the-art models with MAE = 33.6 for a 20-minute prediction window. These great results showcase the utility of the developed framework in CO2 variation prediction in different spatial settings.  
 
 <!--- ![Bike Study](/assets/img/bike_study.jpeg) -->
 
