@@ -1,7 +1,7 @@
 # Data Scientist
 
 #### Technical Skills: Python, SQL, GoLang, PyTorch, TensorFlow. 
-### Machine Learning Skills: Deep Learning, Reinforcement Learning, Time-series Analysis, Computer Vision, Tree-based Algorithms, Federated Learning, and Quantization
+#### Machine Learning Skills: Deep Learning, Reinforcement Learning, Time-series Analysis, Computer Vision, Tree-based Algorithms, Federated Learning, and Quantization
 
 ## Education
 - Ph.D., Electrical and Computer Engineering | University of Western Ontario (_In Progress_)
